@@ -335,6 +335,7 @@
     [_text release];
     _text = [[text mutableCopy] retain];
 	_changesMade = YES;
+  [_markers removeAllObjects];
     if ([self superview]) [self setNeedsDisplay];
 }
 
